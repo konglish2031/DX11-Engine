@@ -1,0 +1,9 @@
+﻿  Source.cpp
+C:\Users\82107\Desktop\DX11 Engine\DX11 Engine\Source.cpp(3,38): warning C4081: expected 'newline'; found ';'
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  DX11 Engine.vcxproj -> C:\Users\82107\Desktop\DX11 Engine\x64\Release\DX11 Engine.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
