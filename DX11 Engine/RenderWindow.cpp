@@ -14,7 +14,7 @@ bool RenderWindow::Initialize(WindowContainer* pWindowContainer, HINSTANCE hInst
 	this->window_class_wide = StringConverter::StringToWide(this->window_class);
 
 	this->RegisterWindowClass();
-
+	
 	// create window
 	this->handle = CreateWindowEx(
 		0, //Extended Windows style - we are using the default. For other options, see: https://msdn.microsoft.com/en-us/library/windows/desktop/ff700543(v=vs.85).aspx
@@ -108,9 +108,11 @@ LRESULT CALLBACK HandleMessageSetup(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 {
 	switch (uMsg)
 	{
-	case WM_NCCREATE: // if window is created
+	case WM_NCCREATE: // if message means the window is created first.
 	{
 		const CREATESTRUCTW* const pCreate = reinterpret_cast<CREATESTRUCTW*>(lParam);
+		
+		// pCreate->lpCreateParams == windowContainer of engine in Engine.cpp
 		WindowContainer* pWindow = reinterpret_cast<WindowContainer*>(pCreate->lpCreateParams);
 		if (pWindow == nullptr) //Sanity check
 		{
@@ -119,6 +121,7 @@ LRESULT CALLBACK HandleMessageSetup(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 		}
 		SetWindowLongPtr(hwnd, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(pWindow));
 		SetWindowLongPtr(hwnd, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(HandleMsgRedirect));
+		// execute WindowProc() in WindowContainer
 		return pWindow->WindowProc(hwnd, uMsg, wParam, lParam);
 	}
 	default:
@@ -131,7 +134,7 @@ void RenderWindow::RegisterWindowClass()
 	WNDCLASSEX wc; //Our Window Class (This has to be filled before our window can be created) See: https://msdn.microsoft.com/en-us/library/windows/desktop/ms633577(v=vs.85).aspx
 	wc.style = CS_HREDRAW | CS_VREDRAW | CS_OWNDC; //Flags [Redraw on width/height change from resize/movement] See: https://msdn.microsoft.com/en-us/library/windows/desktop/ff729176(v=vs.85).aspx
 	wc.lpfnWndProc = HandleMessageSetup; //Pointer to Window Proc function for handling messages from this window
-	wc.cbClsExtra = 0; //# of extra bytes to allocate following the window-class structure. We are not currently using this.
+	wc.cbClsExtra= 0; //# of extra bytes to allocate following the window-class structure. We are not currently using this.
 	wc.cbWndExtra = 0; //# of extra bytes to allocate following the window instance. We are not currently using this.
 	wc.hInstance = this->hInstance; //Handle to the instance that contains the Window Procedure
 	wc.hIcon = NULL;   //Handle to the class icon. Must be a handle to an icon resource. We are not currently assigning an icon, so this is null.

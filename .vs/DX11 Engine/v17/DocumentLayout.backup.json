@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\WindowContainer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\RenderWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\StringConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\StringConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\ErrorLogger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Engine.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\Engine.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.cpp",
+              "RelativeToolTip": "DX11 Engine\\Engine.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-10T06:49:44.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorLogger.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\ErrorLogger.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.h",
+              "RelativeToolTip": "DX11 Engine\\ErrorLogger.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T06:47:25.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StringConverter.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\StringConverter.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\StringConverter.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\StringConverter.h",
+              "RelativeToolTip": "DX11 Engine\\StringConverter.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T06:34:24.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WindowContainer.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\WindowContainer.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.cpp",
+              "RelativeToolTip": "DX11 Engine\\WindowContainer.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-10T01:41:12.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RenderWindow.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\RenderWindow.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.cpp",
+              "RelativeToolTip": "DX11 Engine\\RenderWindow.cpp",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-09T13:54:33.328Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

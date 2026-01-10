@@ -2,6 +2,7 @@
 #pragma once
 #include <string>
 #include <Windows.h>
+#include <windowsx.h>
 
 class StringConverter
 {
