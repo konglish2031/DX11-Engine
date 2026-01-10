@@ -3,7 +3,18 @@
 
 bool Engine::Initialize(HINSTANCE hInstance, std::string windowTitle, std::string window_class, int width, int height)
 {
-	return this->WindowContainer::render_window.Initialize(this, hInstance, windowTitle, window_class, width, height);
+	if (!this->WindowContainer::render_window.Initialize(this, hInstance, windowTitle, window_class, width, height))
+		return false;
+
+	if(!graphic.Initialize(this->render_window.GetHWND(), width, height))
+		return false;
+
+	return true;
+}
+
+void Engine::RenderFrame()
+{
+	graphic.RenderFrame();
 }
 
 bool Engine::ProcessMessages()

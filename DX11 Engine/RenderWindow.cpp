@@ -51,7 +51,7 @@ bool RenderWindow::ProcessMessages()
 	MSG msg;
 	ZeroMemory(&msg, sizeof(MSG)); // Initialize the message structure.
 
-	if (PeekMessage(&msg, // Where to store message (if one exists) See: https://msdn.microsoft.com/en-us/library/windows/desktop/ms644943(v=vs.85).aspx
+	while (PeekMessage(&msg, // Where to store message (if one exists) See: https://msdn.microsoft.com/en-us/library/windows/desktop/ms644943(v=vs.85).aspx
 		this->handle, // Handle to window we are checking messages for
 		0,    // Minimum Filter Msg Value - We are not filtering for specific messages, but the min/max could be used to filter only mouse messages for example.
 		0,    // Maximum Filter Msg Value
@@ -73,6 +73,11 @@ bool RenderWindow::ProcessMessages()
 	}
 
 	return true;
+}
+
+HWND RenderWindow::GetHWND() const
+{
+	return this->handle;
 }
 
 RenderWindow::~RenderWindow()
@@ -132,6 +137,7 @@ LRESULT CALLBACK HandleMessageSetup(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 void RenderWindow::RegisterWindowClass()
 {
 	WNDCLASSEX wc; //Our Window Class (This has to be filled before our window can be created) See: https://msdn.microsoft.com/en-us/library/windows/desktop/ms633577(v=vs.85).aspx
+	
 	wc.style = CS_HREDRAW | CS_VREDRAW | CS_OWNDC; //Flags [Redraw on width/height change from resize/movement] See: https://msdn.microsoft.com/en-us/library/windows/desktop/ff729176(v=vs.85).aspx
 	wc.lpfnWndProc = HandleMessageSetup; //Pointer to Window Proc function for handling messages from this window
 	wc.cbClsExtra= 0; //# of extra bytes to allocate following the window-class structure. We are not currently using this.
@@ -144,5 +150,6 @@ void RenderWindow::RegisterWindowClass()
 	wc.lpszMenuName = NULL; //Pointer to a null terminated character string for the menu. We are not using a menu yet, so this will be NULL.
 	wc.lpszClassName = this->window_class_wide.c_str(); //Pointer to null terminated string of our class name for this window.
 	wc.cbSize = sizeof(WNDCLASSEX); //Need to fill in the size of our struct for cbSize
+
 	RegisterClassEx(&wc); // Register the class so that it is usable.
 }

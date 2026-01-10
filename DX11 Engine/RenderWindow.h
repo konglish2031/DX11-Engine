@@ -9,6 +9,7 @@ class RenderWindow
 public:
 	bool Initialize(WindowContainer* pWindowContainer, HINSTANCE hInstance, std::string windowTitle, std::string window_class, int width, int height);
 	bool ProcessMessages(); // Process the input messages(e.g. mouse or keyboard) 
+	HWND GetHWND() const;
 	~RenderWindow();
 
 private:

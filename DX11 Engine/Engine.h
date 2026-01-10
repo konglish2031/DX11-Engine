@@ -9,4 +9,5 @@ public:
 	bool ProcessMessages();
 	// execute (every frame?)
 	void Update(); 
+	void RenderFrame();
 };
