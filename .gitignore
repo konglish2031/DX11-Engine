@@ -1,0 +1,4 @@
+# Visual Studio cache (절대 커밋 금지)
+.vs/
+*.ipch
+/.vs
