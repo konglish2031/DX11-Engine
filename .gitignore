@@ -2,3 +2,5 @@
 .vs/
 *.ipch
 /.vs
+/.vs/DX11 Engine/v17/ipch/AutoPCH
+/.vs
