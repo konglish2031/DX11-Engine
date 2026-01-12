@@ -5,12 +5,15 @@ bool Graphics::Initialize(HWND hwnd, int width, int height)
 	if (!InitializeDirectX(hwnd, width, height))
 		return false;
 
+	if (!InitializeShaders())
+		return false;
+
 	return true;
 }
 
 void Graphics::RenderFrame()
 {
-	float bgcolor[] = { 0.0f, 1.0f, 0.0f, 1.0f };
+	float bgcolor[] = { 0.0f, 0.0f, 1.0f, 1.0f };
 	this->deviceContext->ClearRenderTargetView(this->renderTargetView.Get(), bgcolor);
 	this->swapchain->Present(1, NULL);
 }
@@ -21,14 +24,13 @@ bool Graphics::InitializeDirectX(HWND hwnd, int width, int height)
 
 	if (adapters.size() < 1)
 	{
-		ErrorLogger::Log("Graphics::InitializeDirectX(), No DXGI Adapters found.");
+		ErrorLogger::Log("No IDXGI Adapters found.");
 		return false;
 	}
 
 	DXGI_SWAP_CHAIN_DESC scd;
 	ZeroMemory(&scd, sizeof(DXGI_SWAP_CHAIN_DESC));
 
-	// initialize buffer description of swapchain description
 	scd.BufferDesc.Width = width;
 	scd.BufferDesc.Height = height;
 	scd.BufferDesc.RefreshRate.Numerator = 60;
@@ -48,44 +50,79 @@ bool Graphics::InitializeDirectX(HWND hwnd, int width, int height)
 	scd.Flags = DXGI_SWAP_CHAIN_FLAG_ALLOW_MODE_SWITCH;
 
 	HRESULT hr;
-
-	hr = D3D11CreateDeviceAndSwapChain(adapters[0].pAdapter,
-										D3D_DRIVER_TYPE_UNKNOWN,
-										NULL,
-										NULL,
-										NULL,
-										0,
-										D3D11_SDK_VERSION,
-										&scd,
-										this->swapchain.GetAddressOf(),
-										this->device.GetAddressOf(),
-										NULL,
-										this->deviceContext.GetAddressOf());
+	hr = D3D11CreateDeviceAndSwapChain(adapters[0].pAdapter, //IDXGI Adapter
+		D3D_DRIVER_TYPE_UNKNOWN,
+		NULL, //FOR SOFTWARE DRIVER TYPE
+		NULL, //FLAGS FOR RUNTIME LAYERS
+		NULL, //FEATURE LEVELS ARRAY
+		0, //# OF FEATURE LEVELS IN ARRAY
+		D3D11_SDK_VERSION,
+		&scd, //Swapchain description
+		this->swapchain.GetAddressOf(), //Swapchain Address
+		this->device.GetAddressOf(), //Device Address
+		NULL, //Supported feature level
+		this->deviceContext.GetAddressOf()); //Device Context Address
 
 	if (FAILED(hr))
 	{
-		ErrorLogger::Log(hr, 
-			"Failed to create device. Graphics::InitializeDirectX()::D3D11CreateDeviceAndSwapChain()");
+		ErrorLogger::Log(hr, "Failed to create device and swapchain.");
 		return false;
 	}
 
 	Microsoft::WRL::ComPtr<ID3D11Texture2D> backBuffer;
 	hr = this->swapchain->GetBuffer(0, __uuidof(ID3D11Texture2D), reinterpret_cast<void**>(backBuffer.GetAddressOf()));
-	if (FAILED(hr))
+	if (FAILED(hr)) //If error occurred
 	{
-		ErrorLogger::Log(hr, "Failed to get backBuffer");
+		ErrorLogger::Log(hr, "GetBuffer Failed.");
 		return false;
 	}
 
-	// create render target view
 	hr = this->device->CreateRenderTargetView(backBuffer.Get(), NULL, this->renderTargetView.GetAddressOf());
-	if (FAILED(hr))
+	if (FAILED(hr)) //If error occurred
 	{
-		ErrorLogger::Log(hr, "Failed to create render target veiw");
+		ErrorLogger::Log(hr, "Failed to create render target view.");
 		return false;
 	}
 
-	this->deviceContext->OMSetRenderTargets(1, renderTargetView.GetAddressOf(), NULL);
+	this->deviceContext->OMSetRenderTargets(1, this->renderTargetView.GetAddressOf(), NULL);
+
+	return true;
+}
+
+bool Graphics::InitializeShaders()
+{
+
+	std::wstring shaderfolder = L"";
+#pragma region DetermineShaderPath
+	if (IsDebuggerPresent() == TRUE)
+	{
+#ifdef _DEBUG //Debug Mode
+#ifdef _WIN64 //x64
+		shaderfolder = L"..\\x64\\Debug\\";
+#else  //x86 (Win32)
+		shaderfolder = L"..\\Debug\\";
+#endif
+#else //Release Mode
+#ifdef _WIN64 //x64
+		shaderfolder = L"..\\x64\\Release\\";
+#else  //x86 (Win32)
+		shaderfolder = L"..\\Release\\";
+#endif
+#endif
+	}
+
+	D3D11_INPUT_ELEMENT_DESC layout[] =
+	{
+		{"POSITION", 0, DXGI_FORMAT::DXGI_FORMAT_R32G32_FLOAT, 0, 0, D3D11_INPUT_CLASSIFICATION::D3D11_INPUT_PER_VERTEX_DATA, 0  },
+	};
+
+	UINT numElements = ARRAYSIZE(layout);
+
+
+	if (!vertexshader.Initialize(this->device, shaderfolder + L"vertexshader.cso", layout, numElements))
+		return false;
+
+
 
 	return true;
 }

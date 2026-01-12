@@ -1,3 +1,4 @@
+// AdapterReader.h
 #pragma once
 #include "..\\ErrorLogger.h"
 #include <d3d11.h>

@@ -1,4 +1,3 @@
-
 #include "Engine.h"
 
 bool Engine::Initialize(HINSTANCE hInstance, std::string windowTitle, std::string window_class, int width, int height)

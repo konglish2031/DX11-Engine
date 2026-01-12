@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\WindowContainer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Graphics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Graphics\\Graphics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Shaders.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Graphics\\Shaders.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,12 +23,63 @@
       "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\RenderWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\StringConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\StringConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\ErrorLogger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\RenderWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\StringConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\StringConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\WindowContainer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\AdapterReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Graphics\\AdapterReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.26100.0\\WINRT\\WRL\\CLIENT.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Shaders.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Graphics\\Shaders.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Graphics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Graphics\\Graphics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\VertexShader.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\VertexShader.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\ErrorLogger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Vertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Graphics\\Vertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\WindowContainer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\AdapterReader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2159D565-D57A-4C12-B344-54360C344E51}|DX11 Engine\\DX11 Engine.vcxproj|solutionrelative:DX11 Engine\\Graphics\\AdapterReader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\AdapterReader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DX11 Engine\\AdapterReader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +89,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "RenderWindow.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\RenderWindow.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.h",
+              "RelativeToolTip": "DX11 Engine\\RenderWindow.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T09:49:56.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorLogger.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\ErrorLogger.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.h",
+              "RelativeToolTip": "DX11 Engine\\ErrorLogger.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T06:47:25.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Engine.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\Engine.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.h",
+              "RelativeToolTip": "DX11 Engine\\Engine.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T15:28:43.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Engine.cpp",
               "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.cpp",
               "RelativeDocumentMoniker": "DX11 Engine\\Engine.cpp",
               "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Engine.cpp",
               "RelativeToolTip": "DX11 Engine\\Engine.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-10T06:49:44.47Z",
               "EditorCaption": ""
@@ -48,54 +146,209 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ErrorLogger.h",
-              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.h",
-              "RelativeDocumentMoniker": "DX11 Engine\\ErrorLogger.h",
-              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.h",
-              "RelativeToolTip": "DX11 Engine\\ErrorLogger.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-10T06:47:25.989Z",
+              "Title": "RenderWindow.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\RenderWindow.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.cpp",
+              "RelativeToolTip": "DX11 Engine\\RenderWindow.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-09T13:54:33.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Source.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\Source.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Source.cpp",
+              "RelativeToolTip": "DX11 Engine\\Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-10T09:19:11.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shaders.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Shaders.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\Graphics\\Shaders.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Shaders.cpp",
+              "RelativeToolTip": "DX11 Engine\\Graphics\\Shaders.cpp",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-12T07:44:39.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Graphics.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Graphics.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\Graphics\\Graphics.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Graphics.cpp",
+              "RelativeToolTip": "DX11 Engine\\Graphics\\Graphics.cpp",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAUwGIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-10T10:10:44.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "StringConverter.h",
               "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\StringConverter.h",
               "RelativeDocumentMoniker": "DX11 Engine\\StringConverter.h",
               "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\StringConverter.h",
               "RelativeToolTip": "DX11 Engine\\StringConverter.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-10T06:34:24.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
+              "Title": "WindowContainer.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\WindowContainer.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.h",
+              "RelativeToolTip": "DX11 Engine\\WindowContainer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T09:40:18.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdapterReader.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\AdapterReader.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\Graphics\\AdapterReader.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\AdapterReader.cpp",
+              "RelativeToolTip": "DX11 Engine\\Graphics\\AdapterReader.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-10T10:11:12.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "client.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\winrt\\wrl\\client.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\winrt\\wrl\\client.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\winrt\\wrl\\client.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\winrt\\wrl\\client.h",
+              "ViewState": "AgIAAHYBAAAAAAAAAAAmwHEBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T10:09:08.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Shaders.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Shaders.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\Graphics\\Shaders.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Shaders.h",
+              "RelativeToolTip": "DX11 Engine\\Graphics\\Shaders.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-12T07:44:27.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Graphics.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Graphics.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\Graphics\\Graphics.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Graphics.h",
+              "RelativeToolTip": "DX11 Engine\\Graphics\\Graphics.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T10:10:52.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VertexShader.hlsl",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\VertexShader.hlsl",
+              "RelativeDocumentMoniker": "DX11 Engine\\VertexShader.hlsl",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\VertexShader.hlsl",
+              "RelativeToolTip": "DX11 Engine\\VertexShader.hlsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-01-12T07:39:40.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ErrorLogger.cpp",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.cpp",
+              "RelativeDocumentMoniker": "DX11 Engine\\ErrorLogger.cpp",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\ErrorLogger.cpp",
+              "RelativeToolTip": "DX11 Engine\\ErrorLogger.cpp",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-12T08:12:07.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Vertex.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Vertex.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\Graphics\\Vertex.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\Vertex.h",
+              "RelativeToolTip": "DX11 Engine\\Graphics\\Vertex.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-12T07:02:23.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "WindowContainer.cpp",
               "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.cpp",
               "RelativeDocumentMoniker": "DX11 Engine\\WindowContainer.cpp",
               "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\WindowContainer.cpp",
               "RelativeToolTip": "DX11 Engine\\WindowContainer.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAJIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAtwLQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-10T01:41:12.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RenderWindow.cpp",
-              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.cpp",
-              "RelativeDocumentMoniker": "DX11 Engine\\RenderWindow.cpp",
-              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\RenderWindow.cpp",
-              "RelativeToolTip": "DX11 Engine\\RenderWindow.cpp",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-09T13:54:33.328Z",
+              "DocumentIndex": 18,
+              "Title": "AdapterReader.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\AdapterReader.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\Graphics\\AdapterReader.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\Graphics\\AdapterReader.h",
+              "RelativeToolTip": "DX11 Engine\\Graphics\\AdapterReader.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T10:11:01.808Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdapterReader.h",
+              "DocumentMoniker": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\AdapterReader.h",
+              "RelativeDocumentMoniker": "DX11 Engine\\AdapterReader.h",
+              "ToolTip": "C:\\Users\\82107\\Documents\\GitHub\\DX11-Engine\\DX11 Engine\\AdapterReader.h",
+              "RelativeToolTip": "DX11 Engine\\AdapterReader.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-10T09:44:09.173Z"
             }
           ]
         }

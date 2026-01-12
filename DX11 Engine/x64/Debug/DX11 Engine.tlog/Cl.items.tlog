@@ -7,6 +7,7 @@ C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Keyboard\KeyboardEvent.c
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Mouse\MouseClass.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\MouseClass.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Mouse\MouseEvent.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\MouseEvent.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\RenderWindow.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\RenderWindow.obj
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Shaders.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Shaders.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Source.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Source.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\StringConverter.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\StringConverter.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\WindowContainer.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\WindowContainer.obj

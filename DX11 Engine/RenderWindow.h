@@ -2,7 +2,7 @@
 #pragma once
 #include "ErrorLogger.h"
 
-class WindowContainer;
+class WindowContainer; // forward definition
 
 class RenderWindow
 {
@@ -13,14 +13,12 @@ public:
 	~RenderWindow();
 
 private:
-	/* RegisterWindowClass();
-		1. Before a window exists, you must define its "Class."
-
-	*/
 	void RegisterWindowClass(); 
 
-	HWND handle = NULL; // handle to this window
-	HINSTANCE hInstance; // handle to application instance
+	// handle to the window
+	HWND handle = NULL;
+
+	HINSTANCE hInstance; 
 
 	std::string window_title = "";
 	std::wstring window_title_wide = L"";
