@@ -1,11 +1,6 @@
-﻿  Engine.cpp
-  Graphics.cpp
-  Shaders.cpp
-  RenderWindow.cpp
-  Source.cpp
-C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Source.cpp(9,77): warning C4390: ';': empty controlled statement found; is this the intent?
-  WindowContainer.cpp
-  Generating Code...
+﻿  Graphics.cpp
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Graphics.cpp(113,24): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Graphics.cpp(114,26): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
   DX11 Engine.vcxproj -> C:\Users\82107\Documents\GitHub\DX11-Engine\x64\Debug\DX11 Engine.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

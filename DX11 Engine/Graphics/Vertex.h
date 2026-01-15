@@ -5,8 +5,8 @@ struct Vertex
 {	
 	DirectX::XMFLOAT2 pos;
 	
-	Vertex() {}
-	Vectex(float x, float y)
+	Vertex() : pos(0.0f, 0.0f) {}
+	Vertex(float x, float y)
 		: pos(x, y) {}
 
 };

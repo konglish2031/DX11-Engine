@@ -8,13 +8,31 @@ bool Graphics::Initialize(HWND hwnd, int width, int height)
 	if (!InitializeShaders())
 		return false;
 
+	if (!InitializeScene())
+		return false;
+
 	return true;
 }
 
 void Graphics::RenderFrame()
 {
 	float bgcolor[] = { 0.0f, 0.0f, 1.0f, 1.0f };
+	// color the render target with the colour bgcolor[]
 	this->deviceContext->ClearRenderTargetView(this->renderTargetView.Get(), bgcolor);
+	// set input layout
+	this->deviceContext->IASetInputLayout(this->vertexshader.GetInputLayout());
+	this->deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY::D3D10_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+	// set shaders into the GPU pipeline
+	this->deviceContext->VSSetShader(vertexshader.GetShader(), NULL, 0);
+	this->deviceContext->PSSetShader(pixelShader.GetShader(), NULL, 0);
+
+	UINT stride = sizeof(Vertex);
+	UINT offset = 0;
+	this->deviceContext->IASetVertexBuffers(0, 1, vertexBuffer.GetAddressOf(), &stride, &offset);
+
+
+	this->deviceContext->Draw(3, 0);
+
 	this->swapchain->Present(1, NULL);
 }
 
@@ -86,12 +104,24 @@ bool Graphics::InitializeDirectX(HWND hwnd, int width, int height)
 
 	this->deviceContext->OMSetRenderTargets(1, this->renderTargetView.GetAddressOf(), NULL);
 
+	//Create the Viewport
+	D3D11_VIEWPORT viewport;
+	ZeroMemory(&viewport, sizeof(D3D11_VIEWPORT));
+
+	viewport.TopLeftX = 0;
+	viewport.TopLeftY = 0;
+	viewport.Width = width/2;
+	viewport.Height = height/2;
+
+	//Set the Viewport
+	this->deviceContext->RSSetViewports(1, // number of viewport
+		&viewport);
+
 	return true;
 }
 
 bool Graphics::InitializeShaders()
 {
-
 	std::wstring shaderfolder = L"";
 #pragma region DetermineShaderPath
 	if (IsDebuggerPresent() == TRUE)
@@ -122,7 +152,50 @@ bool Graphics::InitializeShaders()
 	if (!vertexshader.Initialize(this->device, shaderfolder + L"vertexshader.cso", layout, numElements))
 		return false;
 
-
+	if (!pixelShader.Initialize(this->device, shaderfolder + L"pixelShader.cso"))
+		return false;
 
 	return true;
 }
+
+bool Graphics::InitializeScene()
+{
+	Vertex v[] =
+	{
+		Vertex(0.0f, -0.1f), //Center Point
+		Vertex(-0.1f, 0.0f), //Left Point
+		Vertex(0.1f, 0.0f), //Right Point
+	};
+
+	// create vertex buffer
+	D3D11_BUFFER_DESC vertexBufferDesc;
+	ZeroMemory(&vertexBufferDesc, sizeof(vertexBufferDesc));
+
+	// buffer usage
+	vertexBufferDesc.Usage = D3D11_USAGE_DEFAULT;
+	// buffer size
+	vertexBufferDesc.ByteWidth = sizeof(Vertex) * ARRAYSIZE(v); 
+	// buffer usage in terms of GPU pipeline
+	vertexBufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+	vertexBufferDesc.CPUAccessFlags = 0;
+	vertexBufferDesc.MiscFlags = 0;
+
+	D3D11_SUBRESOURCE_DATA vertexBufferData;
+	ZeroMemory(&vertexBufferData, sizeof(vertexBufferData));
+	vertexBufferData.pSysMem = v;
+	
+	HRESULT hr = this->device->CreateBuffer(&vertexBufferDesc, &vertexBufferData, this->vertexBuffer.GetAddressOf());
+	if (FAILED(hr))
+	{
+		ErrorLogger::Log(hr, "Failed to create vertex buffer.");
+		return false;
+	}
+
+	return true;
+}
+
+// IA
+// VS
+// RS
+// PS
+// OM
