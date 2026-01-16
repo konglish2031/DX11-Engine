@@ -9,6 +9,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	if (FAILED(hr))
 	{
 		ErrorLogger::Log(hr, "Source, failed to call CoInitialize()");
+		return -1;
 	}
 
 	Engine engine;
