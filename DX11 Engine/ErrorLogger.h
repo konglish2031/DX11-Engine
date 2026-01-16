@@ -1,6 +1,9 @@
 // ErrorLogger.h
 #pragma once
 #include "StringConverter.h"	
+#include <fstream>
+#include <iostream>
+#include <string>
 
 class ErrorLogger
 {

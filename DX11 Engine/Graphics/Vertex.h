@@ -1,12 +1,13 @@
 #pragma once
-#include<DirectXMath.h>	
+#include <DirectXMath.h>
 
 struct Vertex
-{	
-	DirectX::XMFLOAT2 pos;
-	
-	Vertex() : pos(0.0f, 0.0f) {}
-	Vertex(float x, float y)
-		: pos(x, y) {}
+{
+	Vertex() {}
+	Vertex(float x, float y, float z, float u, float v)
+		: pos(x, y, z), texCoord(u, v) {
+	}
 
+	DirectX::XMFLOAT3 pos;
+	DirectX::XMFLOAT2 texCoord;
 };

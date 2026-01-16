@@ -1,4 +1,20 @@
-float4 main(float2 inPos : POSITION) : SV_POSITION
+struct VS_INPUT
 {
-    return float4(inPos, 0, 1);
+    float3 inPos : POSITION;
+    float3 inTexCoord : TEXCOORD;
+};
+
+struct VS_OUTPUT
+{
+    float4 outPosisiton : SV_POSITION;
+    float3 outTexCoord : TEXCOORD;
+};
+
+VS_OUTPUT main(VS_INPUT input)
+{
+    VS_OUTPUT output;
+    output.outPosisiton = float4(input.inPos, 1.0f);
+    output.outTexCoord = input.inTexCoord;
+    
+    return output;
 }
