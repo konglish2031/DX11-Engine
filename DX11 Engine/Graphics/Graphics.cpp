@@ -1,5 +1,11 @@
 #include "Graphics.h"
 
+// IA
+// VS
+// RS
+// PS
+// OM
+
 bool Graphics::Initialize(HWND hwnd, int width, int height)
 {
 	if (!InitializeDirectX(hwnd, width, height))
@@ -31,13 +37,22 @@ void Graphics::RenderFrame()
 	this->deviceContext->RSSetState(this->rasterizerState.Get());
 	// set depthstencil state
 	this->deviceContext->OMSetDepthStencilState(this->depthStencilState.Get(), 0);
-	UINT stride = sizeof(Vertex);
+	
 	UINT offset = 0;
+
+	// Update Constant Buffer
+	constantBuffer.data.mat = DirectX::XMMatrixIdentity();
+	constantBuffer.data.mat = DirectX::XMMatrixTranslation(0, -0.5f, 0);
+	constantBuffer.data.mat = DirectX::XMMatrixTranspose(constantBuffer.data.mat);
+	if (!constantBuffer.ApplyChanges())
+		return;
+	this->deviceContext->VSSetConstantBuffers(0, 1, this->constantBuffer.GetAddressOf());
 
 	//Draw Square
 	this->deviceContext->PSSetShaderResources(0, 1, this->myTexture.GetAddressOf());
-	this->deviceContext->IASetVertexBuffers(0, 1, vertexBuffer.GetAddressOf(), &stride, &offset);
-	this->deviceContext->Draw(6, 0);
+	this->deviceContext->IASetVertexBuffers(0, 1, vertexBuffer.GetAddressOf(), vertexBuffer.StridePtr() , &offset);
+	this->deviceContext->IASetIndexBuffer(indicesBuffer.Get(), DXGI_FORMAT_R32_UINT, 0);
+	this->deviceContext->DrawIndexed(indicesBuffer.BufferSize() , 0, 0);
 
 	//Draw Text
 	spriteBatch->Begin();
@@ -251,42 +266,43 @@ bool Graphics::InitializeShaders()
 
 bool Graphics::InitializeScene()
 {
+	//Textured Square
 	Vertex v[] =
 	{
-		Vertex(-0.5f,  -0.5f, 1.0f, 0.0f, 1.0f), //Bottom Left 
-		Vertex(-0.5f,   0.5f, 1.0f, 0.0f, 0.0f), //Top Left
-		Vertex(0.5f,    0.5f, 1.0f, 1.0f, 0.0f), //Top Right
-
-		Vertex(-0.5f, -0.5f, 1.0f, 0.0f, 1.0f), //Bottom Left 
-		Vertex(0.5f,   0.5f, 1.0f, 1.0f, 0.0f), //Top Right
-		Vertex(0.5f,  -0.5f, 1.0f, 1.0f, 1.0f), //Bottom Right
+		Vertex(-0.5f,  -0.5f, 1.0f, 0.0f, 1.0f), //Bottom Left   - [0]
+		Vertex(-0.5f,   0.5f, 1.0f, 0.0f, 0.0f), //Top Left      - [1]
+		Vertex(0.5f,   0.5f, 1.0f, 1.0f, 0.0f), //Top Right     - [2]
+		Vertex(0.5f,  -0.5f, 1.0f, 1.0f, 1.0f), //Bottom Right   - [3]
 
 	};
 
+
+
 	// create vertex buffer
-	D3D11_BUFFER_DESC vertexBufferDesc;
-	ZeroMemory(&vertexBufferDesc, sizeof(vertexBufferDesc));
-
-	// buffer usage
-	vertexBufferDesc.Usage = D3D11_USAGE_DEFAULT;
-	// buffer size
-	vertexBufferDesc.ByteWidth = sizeof(Vertex) * ARRAYSIZE(v); 
-	// buffer usage in terms of GPU pipeline
-	vertexBufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
-	vertexBufferDesc.CPUAccessFlags = 0;
-	vertexBufferDesc.MiscFlags = 0;
-
-	D3D11_SUBRESOURCE_DATA vertexBufferData;
-	ZeroMemory(&vertexBufferData, sizeof(vertexBufferData));
-	vertexBufferData.pSysMem = v;
 	
-	HRESULT hr = this->device->CreateBuffer(&vertexBufferDesc, &vertexBufferData, this->vertexBuffer.GetAddressOf());
+	HRESULT hr = this->vertexBuffer.Initialize(this->device.Get(), v, ARRAYSIZE(v));
 	if (FAILED(hr))
 	{
 		ErrorLogger::Log(hr, "Failed to create vertex buffer.");
 		return false;
 	}
 
+	DWORD indices[] =
+	{
+		0, 1, 2,
+		0, 2, 3,
+	};
+
+	// Load Index Data
+
+	hr = this->indicesBuffer.Initialize(this->device.Get(), indices, ARRAYSIZE(indices));
+	if (FAILED(hr))
+	{
+		ErrorLogger::Log(hr, "Failed to create indices buffer.");
+		return hr;
+	}
+
+	// load texture
 	hr = DirectX::CreateWICTextureFromFile(this->device.Get(), L"Data\\Textures\\stone.jfif", nullptr, myTexture.GetAddressOf());
 	if (FAILED(hr))
 	{
@@ -294,11 +310,13 @@ bool Graphics::InitializeScene()
 		return false;
 	}
 
+	// Initialize Constant Buffer(s)
+	hr = this->constantBuffer.Initialize(this->device.Get(), this->deviceContext.Get());
+	if (FAILED(hr))
+	{
+		ErrorLogger::Log(hr, "Failed to initialize constant buffer.");
+		return false;
+	}
 	return true;
 }
 
-// IA
-// VS
-// RS
-// PS
-// OM
