@@ -1,4 +1,3 @@
-
 #include "ErrorLogger.h"
 #include <comdef.h> // for _com_error
 
@@ -26,4 +25,10 @@ void ErrorLogger::Log(HRESULT hr, std::wstring message)
 	std::wstring error_message = L"Error: " + message + L"\n";
 	MessageBoxW(NULL, error_message.c_str(), L"Error", MB_ICONERROR);
 
+}
+
+void ErrorLogger::Log(COMException& exception)
+{
+	std::wstring error_message = exception.what();
+	MessageBoxW(NULL, error_message.c_str(), L"Error", MB_ICONERROR);
 }

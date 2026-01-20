@@ -1,24 +1,26 @@
 #pragma once
 #include "AdapterReader.h"
 #include "Shaders.h"
-#include "Vertex.h"
+//#include "Vertex.h"
+#include "Camera.h"
+#include "../Timer.h"
+#include "Model.h"
+
 #include <SpriteBatch.h>
 #include <SpriteFont.h>
 #include <WICTextureLoader.h>
-#include "VertexBuffer.h"
-#include "IndexBuffer.h"
-#include "ConstantBufferTypes.h"
-#include "ConstantBuffer.h"
 
 class Graphics
 {
 public:
-	bool Initialize(HWND hwnd, int width, int height);
-	void RenderFrame();
+	Camera camera;
+	Model model;
+
 private:
-	bool InitializeDirectX(HWND hwnd, int width, int height);
-	bool InitializeShaders();
-	bool InitializeScene();
+	Timer fpsTimer;
+
+	int windowWidth = 0;
+	int windowHeight = 0;
 
 	Microsoft::WRL::ComPtr<ID3D11Device> device;
 	Microsoft::WRL::ComPtr<ID3D11DeviceContext> deviceContext;
@@ -26,22 +28,35 @@ private:
 	Microsoft::WRL::ComPtr<ID3D11RenderTargetView> renderTargetView;
 
 	VertexShader vertexshader;
-	PixelShader pixelShader;
+	PixelShader pixelshader;
 
-	VertexBuffer<Vertex> vertexBuffer;
-	IndexBuffer indicesBuffer;
-	ConstantBuffer<CB_VS_vertexshader> constantBuffer;
-	
+	ConstantBuffer<CB_VS_vertexshader> cb_vs_vertexshader; // cb_vs_vertexshader
+	ConstantBuffer<CB_PS_pixelshader> cb_ps_pixelshader;
 
 	Microsoft::WRL::ComPtr<ID3D11RasterizerState> rasterizerState;
+	Microsoft::WRL::ComPtr<ID3D11RasterizerState> rasterizerState_cullFront;
+	Microsoft::WRL::ComPtr<ID3D11BlendState> blendState;
 
 	Microsoft::WRL::ComPtr<ID3D11DepthStencilState> depthStencilState;
 	Microsoft::WRL::ComPtr<ID3D11DepthStencilView> depthStencilView;
 	Microsoft::WRL::ComPtr<ID3D11Texture2D> depthStencilBuffer;
-	
+
 	std::unique_ptr<DirectX::SpriteBatch> spriteBatch;
 	std::unique_ptr<DirectX::SpriteFont> spriteFont;
 
 	Microsoft::WRL::ComPtr<ID3D11SamplerState> samplerState;
-	Microsoft::WRL::ComPtr<ID3D11ShaderResourceView> myTexture;
+	Microsoft::WRL::ComPtr<ID3D11ShaderResourceView> pinkTexture;
+	Microsoft::WRL::ComPtr<ID3D11ShaderResourceView> grassTexture;
+	Microsoft::WRL::ComPtr<ID3D11ShaderResourceView> pavementTexture;
+
+public:
+	bool Initialize(HWND hwnd, int width, int height);
+	void RenderFrame();
+
+private:
+	bool InitializeDirectX(HWND hwnd);
+	bool InitializeShaders();
+	bool InitializeScene();
+
+	
 };

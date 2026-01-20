@@ -30,7 +30,6 @@ bool VertexShader::Initialize(Microsoft::WRL::ComPtr<ID3D11Device>& device, std:
 	return true;
 }
 
-
 ID3D11VertexShader* VertexShader::GetShader()
 {
 	return this->shader.Get();

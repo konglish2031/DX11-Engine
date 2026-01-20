@@ -2,6 +2,7 @@
 #define VertexBuffer_h__
 #include <d3d11.h>
 #include <wrl/client.h>
+#include <memory>
 
 template<class T>
 class VertexBuffer
@@ -44,8 +45,12 @@ public:
 
 	HRESULT Initialize(ID3D11Device* device, T* data, UINT numVertices)
 	{
+		if (buffer.Get() != nullptr)
+			buffer.Reset();
+
 		this->bufferSize = numVertices;
-		this->stride = std::make_unique<UINT>(sizeof(T));
+		if(this->stride == nullptr) this->stride = std::make_unique<UINT>(sizeof(T));
+			
 
 		D3D11_BUFFER_DESC vertexBufferDesc;
 		ZeroMemory(&vertexBufferDesc, sizeof(vertexBufferDesc));

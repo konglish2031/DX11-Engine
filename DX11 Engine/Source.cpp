@@ -12,6 +12,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		return -1;
 	}
 
+	/*COMException exception(0, "TEST MESSAGE", __FILE__, __FUNCTION__, __LINE__);
+	ErrorLogger::Log(exception);*/
+
 	Engine engine;
 	if(engine.Initialize(hInstance, "Window Title", "MyWindowClass", 800, 600))
 	{

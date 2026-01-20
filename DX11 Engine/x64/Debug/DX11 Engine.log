@@ -1,2 +1,14 @@
-﻿  compilation object save succeeded; see C:\Users\82107\Documents\GitHub\DX11-Engine\x64\Debug\VertexShader.cso
+﻿  Engine.cpp
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Engine.cpp(28,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  ErrorLogger.cpp
+  Graphics.cpp
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Graphics.cpp(214,24): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Graphics.cpp(215,25): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+  Shaders.cpp
+  RenderWindow.cpp
+  Source.cpp
+  WindowContainer.cpp
+  Generating Code...
   DX11 Engine.vcxproj -> C:\Users\82107\Documents\GitHub\DX11-Engine\x64\Debug\DX11 Engine.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

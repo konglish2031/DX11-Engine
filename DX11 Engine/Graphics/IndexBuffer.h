@@ -6,13 +6,13 @@
 
 class IndexBuffer
 {
+private: // private member variables
+	Microsoft::WRL::ComPtr<ID3D11Buffer> buffer;
+	UINT bufferSize = 0;
+
 private:
 	IndexBuffer(const IndexBuffer&) = delete;
 	IndexBuffer& operator=(const IndexBuffer&) = delete;
-
-private:
-	Microsoft::WRL::ComPtr<ID3D11Buffer> buffer;
-	UINT bufferSize = 0;
 public:
 	IndexBuffer() {}
 
@@ -33,6 +33,10 @@ public:
 
 	HRESULT Initialize(ID3D11Device* device, DWORD* data, UINT numIndices)
 	{
+		if (buffer.Get() != nullptr)
+			buffer.Reset();
+
+
 		this->bufferSize = numIndices;
 		//Load Index Data
 		D3D11_BUFFER_DESC indexBufferDesc;
@@ -46,6 +50,13 @@ public:
 		D3D11_SUBRESOURCE_DATA indexBufferData;
 		indexBufferData.pSysMem = data;
 		HRESULT hr = device->CreateBuffer(&indexBufferDesc, &indexBufferData, buffer.GetAddressOf());
+
+		//std::string dummyString = "Reference Counter: ";
+		//dummyString += std::to_string(buffer.Get()->AddRef());
+		//buffer->Release();
+		//dummyString += "\n";
+		//OutputDebugStringA(dummyString.c_str());
+
 		return hr;
 	}
 };

@@ -1,13 +1,16 @@
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Camera.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Camera.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\AdapterReader.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\AdapterReader.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Engine.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Engine.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\ErrorLogger.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\ErrorLogger.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Graphics.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Graphics.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Keyboard\KeyboardClass.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\KeyboardClass.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Keyboard\KeyboardEvent.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\KeyboardEvent.obj
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Model.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Model.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Mouse\MouseClass.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\MouseClass.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Mouse\MouseEvent.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\MouseEvent.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\RenderWindow.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\RenderWindow.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Graphics\Shaders.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Shaders.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Source.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Source.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\StringConverter.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\StringConverter.obj
+C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\Timer.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\Timer.obj
 C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\WindowContainer.cpp;C:\Users\82107\Documents\GitHub\DX11-Engine\DX11 Engine\x64\Debug\WindowContainer.obj
